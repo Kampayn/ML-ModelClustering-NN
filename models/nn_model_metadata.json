@@ -1,0 +1,101 @@
+{
+  "input_features": [
+    "Followers",
+    "Engagement Rate",
+    "business_information",
+    "tier",
+    "umkm_budget",
+    "umkm_target_label"
+  ],
+  "performance": {
+    "accuracy": 0.7848101265822784,
+    "precision": 0.7254901960784313,
+    "recall": 0.925,
+    "f1_score": 0.8131868131868132,
+    "confusion_matrix": [
+      [
+        75,
+        42
+      ],
+      [
+        9,
+        111
+      ]
+    ]
+  },
+  "feature_info": {
+    "numerical": [
+      "Followers",
+      "Engagement Rate",
+      "umkm_budget"
+    ],
+    "categorical": [
+      "business_information",
+      "tier",
+      "umkm_target_label"
+    ],
+    "tiers": [
+      "Makro",
+      "Mega",
+      "Mikro"
+    ],
+    "labels": [
+      "Digital creator",
+      "Blogger",
+      "Personal blog",
+      "Public figure",
+      "Fashion Designer",
+      "Design & fashion",
+      "Artist",
+      "Entrepreneur",
+      "Actor",
+      "Donut Shop",
+      "Video creator",
+      "Community",
+      "Musician/band",
+      "Playground",
+      "Boat/Ferry Company",
+      "Local business",
+      "Photographer",
+      "Beauty, cosmetic & personal care",
+      "Producer",
+      "Circus",
+      "Musician",
+      "Comedian",
+      "Journalist",
+      "Arts & entertainment",
+      "Author",
+      "Marketing Agency",
+      "Just for fun",
+      "Motivational speaker",
+      "Specialty Grocery Store",
+      "Health/beauty",
+      "Athlete",
+      "Chef",
+      "Fashion Model",
+      "Comedy club",
+      "Psychotherapist",
+      "Education",
+      "Gamer",
+      "Movie Character",
+      "Doctor",
+      "Makeup Artist",
+      "Shopping & retail",
+      "Art",
+      "Shopping Service",
+      "App page",
+      "Fitness Trainer",
+      "Entertainment website",
+      "TV show",
+      "Zoo",
+      "Mental health service",
+      "Government Official",
+      "Writer",
+      "Media",
+      "Butcher Shop",
+      "Restaurant",
+      "Kitchen/cooking",
+      "Food & Drink"
+    ]
+  }
+}
