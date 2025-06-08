@@ -1,0 +1,99 @@
+{
+  "dataset_info": {
+    "total_rows": 732,
+    "cleaned_rows": 732,
+    "removed_rows": 0,
+    "features_used": [
+      "Followers",
+      "Engagement Rate",
+      "Average Likes",
+      "Average Comments",
+      "Is Verified",
+      "Is Professional Account",
+      "Mapped_Label"
+    ],
+    "categories": [
+      "fashion",
+      "lifestyle",
+      "beauty",
+      "comedy",
+      "food"
+    ]
+  },
+  "clustering": {
+    "method": "KMeans",
+    "chosen_clusters": 3,
+    "silhouette_score": 0.453302120002938,
+    "cluster_distribution": {
+      "0": 85,
+      "1": 646,
+      "2": 1
+    },
+    "cluster_tiers": {
+      "1": "Mikro",
+      "2": "Makro",
+      "0": "Mega"
+    },
+    "label_distribution": {
+      "0": {
+        "lifestyle": 48,
+        "fashion": 28,
+        "comedy": 7,
+        "beauty": 1,
+        "food": 1
+      },
+      "1": {
+        "beauty": 170,
+        "lifestyle": 153,
+        "food": 123,
+        "comedy": 104,
+        "fashion": 96
+      },
+      "2": {
+        "food": 1
+      }
+    },
+    "tier_statistics": {
+      "Mikro": {
+        "followers_median": 222794.5,
+        "engagement_median": 2.285,
+        "count": 646
+      },
+      "Makro": {
+        "followers_median": 544368.0,
+        "engagement_median": 0.34,
+        "count": 1
+      },
+      "Mega": {
+        "followers_median": 22445086.0,
+        "engagement_median": 0.77,
+        "count": 85
+      }
+    }
+  },
+  "tf_model": {
+    "architecture": "64-32-16-1",
+    "input_shape": 13,
+    "metrics": {
+      "loss": 0.23489859700202942,
+      "mae": 0.3452126979827881,
+      "mse": 0.23489859700202942,
+      "rmse": 0.48466338525004077,
+      "r2_score": 0.9992288540246869
+    },
+    "training_samples": 585,
+    "testing_samples": 147,
+    "error_by_tier": {
+      "Mikro": 0.3288803915335583,
+      "Mega": 0.47010667941149537
+    },
+    "error_by_category": {
+      "comedy": 0.26137142783119555,
+      "lifestyle": 0.30770639674531103,
+      "fashion": 0.35459459820101336,
+      "food": 0.36145507613817857,
+      "beauty": 0.406863665057392
+    }
+  },
+  "created_at": "2025-05-10 12:58:05"
+}
