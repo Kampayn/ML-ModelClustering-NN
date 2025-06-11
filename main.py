@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
 import pandas as pd
 import numpy as np
 import joblib
@@ -10,6 +11,9 @@ import logging
 
 # Initialize the Flask app and enable logging
 app = Flask(__name__)
+
+# Enable CORS for all routes
+CORS(app)
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
